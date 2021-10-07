@@ -8,12 +8,12 @@ Most of them are made using Arduino microcontrollers.
 You may need [Arduino IDE](https://www.arduino.cc/en/software) to upload the various code sketches to your Arduino microcontroller.
 
 ## Netytar's Breath sensor
-1. Clone this repository and open "/Netytar_Breath_Sensor/netytar_breath_sensor.ino";
+1. Clone (green "Code" button -> Clone) this repository and open "/Netytar_Breath_Sensor/netytar_breath_sensor.ino";
 2. Compile and upload the sketch into your Arduino;
 3. Follow the remaining instruction on the [Sensors](https://neeqstock.github.io/sensors/) page in my personal website.
 
 ## Netychords' Head sensor
-1. Clone this repository and open "/Netychords_Head_Sensor/netychords_head_sensor.ino";
+1. Clone (green "Code" button -> Clone) this repository and open "/Netychords_Head_Sensor/netychords_head_sensor.ino";
 2. Compile and upload the sketch into your Arduino;
 3. Follow the remaining instruction on the [Sensors](https://neeqstock.github.io/sensors/) page in my personal website.
 
