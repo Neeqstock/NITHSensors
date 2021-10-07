@@ -12,7 +12,7 @@ You may need [Arduino IDE](https://www.arduino.cc/en/software) to upload the var
 2. Compile and upload the sketch into your Arduino;
 3. Follow the remaining instruction on the [Sensors](https://neeqstock.github.io/sensors/) page in my personal website.
 
-## Netychords Head sensor
+## Netychords' Head sensor
 1. Clone this repository and open "/Netychords_Head_Sensor/netychords_head_sensor.ino";
 2. Compile and upload the sketch into your Arduino;
 3. Follow the remaining instruction on the [Sensors](https://neeqstock.github.io/sensors/) page in my personal website.
