@@ -10,6 +10,6 @@ void setup() {
 void loop() {
   
   int sensorValue = analogRead(A0); // read the input on analog pin 0
-  float voltage = sensorValue / 3;
+  float voltage = sensorValue;
   Serial.println(voltage, 1); // Serial print
 }

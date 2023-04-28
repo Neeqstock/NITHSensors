@@ -3,6 +3,8 @@ int LEDc = 2;
 /* Definition of constants */
 #define SAMPLING_DELAY_MS (5)
 #define SENSOR_NAME ("NithBS_5010DP-0.2.0")
+#define MAX 933
+#define DEADZONE 80
 
 void setup() {
   // initialize serial communication at 9600 bits per second:
@@ -14,7 +16,10 @@ void setup() {
 void loop() {
   
   int sensorValue = analogRead(A0); // read the input on analog pin 0
-  float voltage = sensorValue / 3;
+  float voltage = sensorValue - DEADZONE;
+  if(voltage < 0){
+    voltage = 0;
+  }
   
   /* Print output line */
   /* =============================================== */
@@ -32,6 +37,8 @@ void loop() {
   
   /* Values */
   Serial.print("press=");
-  Serial.println(voltage, DEC);
+  Serial.print(voltage, 0);
+  Serial.print("/");
+  Serial.println(MAX);
   delay(SAMPLING_DELAY_MS);
 }

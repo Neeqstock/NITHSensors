@@ -77,8 +77,10 @@ void loop(void)
   
   /* Print output line */
   /* =============================================== */
-  /* Sensor type and version */
+  /* Line start character */
   Serial.print("$");
+  
+  /* Sensor name and version */
   Serial.print(SENSOR_NAME);
   Serial.print("|");
 
@@ -93,13 +95,13 @@ void loop(void)
   Serial.print("|");
   
   /* Values */
-  Serial.print("abs_yaw=");
+  Serial.print("pos_yaw=");
   Serial.print(euler.x());
   Serial.print("&");
-  Serial.print("abs_roll=");
+  Serial.print("pos_roll=");
   Serial.print(euler.y());
   Serial.print("&");
-  Serial.print("abs_pitch=");
+  Serial.print("pos_pitch=");
   Serial.print(euler.z());
   Serial.print("&");
   

@@ -27,17 +27,19 @@ For each sensor, you can follow a common procedure:
 
 All NithSensors comply to a standard which defines how the output lines must be formatted. A line complying to the standard is formatted as follows:
 
-``$sensor_name-version|status_codes|valuetype=value&valuetype=value``
+``$sensor_name-version|status_codes|valuetype=value&valuetype=value/ceiling``
 
-- All standard Nith output lines start with a ``$``, to distinguish them from other kinds of output lines, and for simple line start discrimination;
+- All standard Nith output lines start with a "``$``", to distinguish them from other kinds of output lines, and for simple line start discrimination;
 
-- There are three main fields, separated by  ``|``;
+- There are three main fields, separated by  "``|``";
 
-- First field contains sensor name and version, separated by ``-``. Sensor name words are usually separated by ``_``, and may contain info on which sensor is used to build it. Version is usually on the format ``vX.X.X``, but may contain other details separated by ``_``  (*e.g. "v.0.2.3_full"*).
+- First field contains sensor name and version, separated by "``-``". Sensor name words are usually separated by "``_``", and may contain info on which sensor is used to build it. Version is usually on the format "``vX.X.X``", but may contain other details separated by "``_``"  (*e.g. "v.0.2.3_full"*).
 
 - Second field contains three-letters status codes, which give informations on the current state of the sensor;
 
-- Third field contains different output arguments, separated by ``&``. Each argument consists of a value type *(e.g. "yaw_acc")* and its value *(e.g. "50")*.
+- Third field contains different output arguments, separated by "``&``". Each argument consists of a value type *(e.g. "yaw_acc")* and its value *(e.g. "50")*;
+
+- For any value it can be specified a ceiling (i.e. upper limit), using the character "``/``". In such case, the Nith libraries will output the value as a percentage by default. 
 
 **Tables containing standardized status codes and value types will come soon**.
 
