@@ -1,5 +1,7 @@
 # NITHSensors
 
+**Deprecated repository! Moved and maintained on:** [https://github.com/LIMUNIMI/NITHsensors/](https://github.com/LIMUNIMI/NITHsensors/)
+
 A repository of firmwares for sensors suitable for the development of accessible applications.
 Here you can download the necessary files to reproduce those sensors on your own, DIY.
 
